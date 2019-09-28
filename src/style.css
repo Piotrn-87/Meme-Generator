@@ -1,25 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=latin-ext");
+
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-    height: 7rem;
-    display: flex;
-    align-items: center;
-    /* background: linear-gradient(to right, #aaa, #fff); */
-    background: linear-gradient(to right, #2a0045, #6441a5);
+.header {
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  /* background: linear-gradient(to right, #aaa, #fff); */
+  background: linear-gradient(to right, #2a0045, #6441a5);
 }
 
-header>img {
-    height: 80%;
-    margin: 0 0 0 10%;
+.header__img {
+  height: 80%;
+  margin: 0 0 0 10%;
 }
 
-header>p {
-    margin: 0 0 0 2rem;
-    color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+header > p {
+  margin: 0 0 0 2rem;
+  color: whitesmoke;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 3rem;
 }
