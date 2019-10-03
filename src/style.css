@@ -3,74 +3,87 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap&subset=latin-ext");
 
 html {
-  font-family: "Roboto Condensed", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .header {
-  height: 7rem;
-  display: flex;
-  align-items: center;
-  /* background: linear-gradient(to right, #aaa, #fff); */
-  background: linear-gradient(to right, #2a0045, #6441a5);
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    /* background: linear-gradient(to right, #aaa, #fff); */
+    background: linear-gradient(to right, #2a0045, #6441a5);
 }
 
 .header__img {
-  height: 80%;
-  margin: 0 0 0 10%;
+    height: 80%;
+    margin: 0 0 0 10%;
 }
 
 .header__paragraph {
-  margin: 0 0 0 2rem;
-  color: whitesmoke;
-  font-size: 3rem;
+    margin: 0 0 0 2rem;
+    color: whitesmoke;
+    font-size: 3rem;
 }
+
 .memes {
-  text-align: center;
-  padding-top: 2rem;
+    text-align: center;
+    padding-top: 2rem;
 }
+
 .memes__top-text,
 .memes__bottom-text {
-  color: whitesmoke;
-  font-weight: bold;
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
 }
 
 .memes__top-text {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 .memes__bottom-text {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 .meme-form {
-  width: 80%;
-  margin: 1rem auto;
-  display: flex;
-  justify-content: space-between;
+    width: 80%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
 }
+
 .meme-form__input {
-  width: 40%;
-  font-size: 1.5rem;
-  height: 2rem;
-  text-align: center;
+    width: 40%;
+    font-size: 1.5rem;
+    height: 2rem;
+    text-align: center;
 }
+
 .meme-form__button {
-  border: none;
-  font-size: 1.5rem;
-  letter-spacing: 0.2rem;
-  color: whitesmoke;
-  background: #6441a5;
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    color: whitesmoke;
+    background: #6441a5;
+}
+
+.meme-form__input:focus,
+.meme-form__input:focus {
+    outline: none;
+    background: #d8f3df;
+    border: 2px solid green;
 }
