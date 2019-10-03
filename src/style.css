@@ -54,7 +54,7 @@ body {
 
 .memes__bottom-text {
     position: absolute;
-    top: 70%;
+    top: 72%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -86,4 +86,9 @@ body {
     outline: none;
     background: #d8f3df;
     border: 2px solid green;
+}
+
+.memes__img {
+    width: 31rem;
+    height: 21rem;
 }
