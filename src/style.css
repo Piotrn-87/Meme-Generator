@@ -16,13 +16,17 @@ body {
     height: 7rem;
     display: flex;
     align-items: center;
-    /* background: linear-gradient(to right, #aaa, #fff); */
     background: linear-gradient(to right, #2a0045, #6441a5);
 }
 
 .header__img {
     height: 80%;
     margin: 0 0 0 10%;
+    transition: .3s linear;
+}
+
+.header__img:hover {
+    animation: shakes .2s ease-in-out infinite alternate;
 }
 
 .header__paragraph {
@@ -38,7 +42,7 @@ body {
 
 .memes__top-text,
 .memes__bottom-text {
-    color: whitesmoke;
+    color: black;
     font-weight: bold;
     font-size: 2rem;
     letter-spacing: 0.2rem;
@@ -91,4 +95,14 @@ body {
 .memes__img {
     width: 31rem;
     height: 21rem;
+}
+
+@keyframes shakes {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
 }
