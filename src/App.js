@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import MemeGenerator from "./MemeGenerator";
+import Footer from "./Footer";
 import "./style.css";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Header />
       <MemeGenerator />
+      <Footer />
     </div>
   );
 }
