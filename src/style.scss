@@ -18,36 +18,41 @@ body {
     flex-direction: row;
     align-items: center;
     background: linear-gradient(to right, #2a0045, #6441a5);
-}
 
-.header__img {
-    height: 80%;
-    margin: 0 0 0 10%;
-    transition: .3s linear;
-}
+    &__img {
+        height: 80%;
+        margin: 0 0 0 10%;
+        transition: .3s linear;
 
-.header__img:hover {
-    animation: shakes .2s ease-in-out infinite alternate;
-}
+        &:hover {
+            animation: shakes .2s ease-in-out infinite alternate;
+        }
+    }
 
-.header__paragraph {
-    margin: 0 0 0 2rem;
-    color: whitesmoke;
-    font-size: 3rem;
+    &__paragraph {
+        margin: 0 0 0 2rem;
+        color: whitesmoke;
+        font-size: 3rem;
+    }
 }
 
 .memes {
     text-align: center;
     padding-top: 2rem;
-}
 
-.memes__top-text,
-.memes__bottom-text {
-    color: black;
-    font-weight: bold;
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
+    &__top-text,
+    &__bottom-text {
+        color: black;
+        font-weight: bold;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+    }
+
+    &__img {
+        width: 31rem;
+        height: 21rem;
+    }
 }
 
 .memes__top-text {
@@ -69,33 +74,27 @@ body {
     margin: 1rem auto;
     display: flex;
     justify-content: space-between;
-}
 
-.meme-form__input {
-    width: 40%;
-    font-size: 1.5rem;
-    height: 2rem;
-    text-align: center;
-}
+    &__input {
+        width: 40%;
+        font-size: 1.5rem;
+        height: 2rem;
+        text-align: center;
 
-.meme-form__button {
-    border: none;
-    font-size: 1.5rem;
-    letter-spacing: 0.2rem;
-    color: whitesmoke;
-    background: #6441a5;
-}
+        &:focus {
+            outline: none;
+            background: #d8f3df;
+            border: 2px solid green;
+        }
+    }
 
-.meme-form__input:focus,
-.meme-form__input:focus {
-    outline: none;
-    background: #d8f3df;
-    border: 2px solid green;
-}
-
-.memes__img {
-    width: 31rem;
-    height: 21rem;
+    &__button {
+        border: none;
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+        color: whitesmoke;
+        background: #6441a5;
+    }
 }
 
 @keyframes shakes {
