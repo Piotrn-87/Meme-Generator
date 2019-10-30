@@ -16,8 +16,9 @@ class MemeGenerator extends React.Component {
     fetch("https://api.imgflip.com/get_memes")
       .then(response => response.json())
       .then(response => {
-        const { memes } = response.data;
-        console.log(memes);
+        const {
+          memes
+        } = response.data;
         this.setState({
           allMemeImg: memes
         });
@@ -25,7 +26,10 @@ class MemeGenerator extends React.Component {
   }
 
   handleChange(event) {
-    const { name, value } = event.target;
+    const {
+      name,
+      value
+    } = event.target;
     this.setState({
       [name]: value
     });
@@ -36,39 +40,58 @@ class MemeGenerator extends React.Component {
     const length = this.state.allMemeImg.length;
     const randNumber = Math.floor(Math.random() * length);
     const randMemeImg = this.state.allMemeImg[randNumber].url;
-    this.setState({ randomImg: randMemeImg });
+    this.setState({
+      randomImg: randMemeImg
+    });
   }
 
   render() {
-    return (
-      <div>
-        <form className="meme-form" onSubmit={this.handleSubmit}>
-          <input
-            className="meme-form__input"
-            name="topText"
-            placeholder="Top Text"
-            value={this.state.topText}
-            onChange={this.handleChange}
-          ></input>
-          <input
-            className="meme-form__input"
-            name="bottomText"
-            placeholder="Bottom text"
-            value={this.state.bottomText}
-            onChange={this.handleChange}
-          ></input>
-          <button className="meme-form__button">Generate</button>
-        </form>
-        <div className="memes">
-          <img
-            className="memes__img"
-            src={this.state.randomImg}
-            alt="random img"
-          ></img>
-          <h2 className="memes__top-text">{this.state.topText}</h2>
-          <h2 className="memes__bottom-text">{this.state.bottomText}</h2>
-        </div>
-      </div>
+    return ( <
+      div >
+      <
+      form className = "meme-form"
+      onSubmit = {
+        this.handleSubmit
+      } >
+      <
+      input className = "meme-form__input"
+      name = "topText"
+      placeholder = "Top Text"
+      value = {
+        this.state.topText
+      }
+      onChange = {
+        this.handleChange
+      } >
+      < /input> <
+      input className = "meme-form__input"
+      name = "bottomText"
+      placeholder = "Bottom text"
+      value = {
+        this.state.bottomText
+      }
+      onChange = {
+        this.handleChange
+      } >
+      < /input> <
+      button className = "meme-form__button" > Generate < /button> <
+      /form> <
+      div className = "memes" >
+      <
+      img className = "memes__img"
+      src = {
+        this.state.randomImg
+      }
+      alt = "random img" >
+      < /img> <
+      h2 className = "memes__top-text" > {
+        this.state.topText
+      } < /h2> <
+      h2 className = "memes__bottom-text" > {
+        this.state.bottomText
+      } < /h2> <
+      /div> <
+      /div>
     );
   }
 }
